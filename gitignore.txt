@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# keep models/ tracked (they're pushed from Kaggle)
+# but ignore any accidental local .pt files outside models/
+*.pt
+
+# allow the models/ tree
+!models/
+!models/**
+!models/**/model.pt
+!models/**/kmeans.pkl
+!models/**/scalers.pkl
+!models/**/features.pkl
+!models/**/config.pkl
+!models/**/metrics.json
+
+# Streamlit cache
+.streamlit/secrets.toml
